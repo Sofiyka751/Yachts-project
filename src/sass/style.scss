@@ -1,0 +1,18 @@
+@import "./utils/variable";
+@import "./utils/placehoulder";
+@import "./components/sport";
+@import "./components/rent";
+@import "./components/rent-modal";
+@import "./components/coments";
+@import "./components/coments-slide";
+@import "./components/footer";
+
+
+body {
+  background: $body-back;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}

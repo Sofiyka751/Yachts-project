@@ -3,9 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <main class="main">
+        <section class="sport">
+            <div class="container sport__content">
+                <div class="sport__content-block1">
+                    <img src="./assets/images/diving.png" alt="ups" class="sport__content-image1">
+                    <button class="sport__content-block1-button">Diving</button>
+                </div>
+                <div class="sport__content-block2">
+                    <img src="./assets/images/fishing.png" alt="ups" class="sport__content-image2">
+                    <button class="sport__content-block2-button">Fishing</button>
+                </div>
+                <div class="sport__content-block3">
+                    <img src="./assets/images/sunbathing.png" alt="ups" class="sport__content-image3">
+                    <button class="sport__content-block3-button">Sunbathing</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="rent">
+            <div class="container rent__content flex items-center justify-center">
+                <div class="rent__content-first">
+                    <h4 class="rent__content-first-title mb-16">Rent a yacht now</h4>
+                    <img src="./assets/images/rent-yaht.png" alt="ups" class="rent__content-first-image">
+                </div>
+                <div class="rent__content-second">
+                    <p class="rent__content-second-text1 pb-4">Full Name</p>
+                    <p class="rent__content-second-text2 pb-4 pt-7">Email</p>
+                    <p class="rent__content-second-text3 pb-4 pt-7">Phone number</p>
+                    <p class="rent__content-second-text4 pt-7">Comment</p>
+                    <button class="rent__content-second-button btn-open flex items-center gap-1.5 mt-16 py-3.5 px-7" data-modal-open>Send
+                        <svg width="18px" height="9px">
+                            <use href="./assets/svg/symbol-defs.svg#icon-Arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="rent__content_modal">
+                            <span class="modal__btn" data-modal-close>
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="inherit"/>
+                                </svg>
+                            </span> 
+                            <div class="rent__content-modal">
+                                <img src="./assets/images/yaht.png" alt="ups" class="rent__content-modal-image">
+                                <div class="rent__content-modal-texts">
+                                    <h5 class="rent__content-modal-title">Thank you</h5>
+                                    <p class="rent__content-modal-text">Thank you for choosing Yacht Adventures, your booking details 
+have been received and our team will be in touch shortly to 
+confirm your reservation and provide any additional
+information or assistance you may need.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coments">
+            <div class="container coments__content">
+                <div class="coments__content-first flex justify-between gap-8 mb-14">
+                    <p class="coments__content-first-text1"><span class="coments__content-first-text1--italic">Yacht Adventures</span> take pride in 
+providing the best possible service 
+and experience to our customers</p>
+                    <p class="coments__content-first-text2">Our customers have enjoyed 
+unforgettable moments on our yachts. 
+Don't just take our word for it - read on 
+to find out what they have to say 
+about their journey with us.</p>
+                </div>
+                <div class="coments__content-second">
+                    <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                          <div class="splide__list">
+                            <div class="splide__slide">
+                              <img src="./assets/images/john.png" alt="ups" width="56px">
+                              <p class="coment__content-slide-title">John Wax</p>
+                              <p class="coment__content-slide-text">I rented the Lagoon 620 with my family for a 
+week-long vacation and it was the best 
+decision ever. The yacht was spacious, 
+comfortable, and luxurious, and the crew 
+took care of everything. </p>
+                            </div>
+                            <div class="splide__slide">
+                              <img src="./assets/images/victoria.png" alt="ups" width="56px">
+                              <p class="coment__content-slide-title">Victoria Romashenko</p>
+                              <p class="coment__content-slide-text">The Sunseeker Manhattan 66 was the 
+perfect choice for our romantic getaway. The 
+yacht was beautifully designed, with all the
+amenities we needed, and the crew was 
+attentive and friendly. </p>
+                            </div>
+                            <div class="splide__slide">
+                              <img src="./assets/images/ihor.png" alt="ups" width="56px">
+                              <p class="coment__content-slide-title">Ihor Trachuk</p>
+                              <p class="coment__content-slide-text">The Azimut 80 was the most luxurious yacht 
+I've ever been on. The cabins were spacious 
+and elegant, and the outdoor areas were 
+perfect for relaxing and entertaining. Worth 
+every penny!</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                <a href="#" class="scroll-arrow flex justify-end mt-16">
+                    <svg width="68px" height="68px">
+                        <use href="./assets/svg/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                </a>
+                <hr class="coments__content-line">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__content-up flex items-start justify-between">
+                <a href="#" class="footer__content-up-logo flex items-center">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="fontisto:yacht">
+                            <mask id="mask0_3500_27" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+                                <path id="Vector" d="M0 18.4153L5.18842 23H20.4087L22.5879 19.9381L0.00191667 18.4153H0ZM13.4023 0V18.2783L20.4068 18.7603L13.4023 0ZM12.4478 3.08008L2.32779 17.481L12.4478 18.1642V3.08008Z" fill="black"/>
+                            </mask>
+                            <g mask="url(#mask0_3500_27)">
+                                <path id="Rectangle 1" d="M0 0H23V23H0V0Z" fill="url(#paint0_linear_3500_27)"/>
+                            </g>
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_3500_27" x1="9.79396" y1="3.48665e-06" x2="21.5409" y2="0.444325" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#BEC7C2"/>
+                                <stop offset="1" stop-color="#A1B5BA"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg width="186px" height="13px">
+                        <use href="./assets/svg/symbol-defs.svg#icon-yacht-Adventures"></use>
+                    </svg>
+                </a>
+                <ul class="footer__content-up-list flex gap-6">
+                    <li class="footer__content-up-list-item">
+                        <a href="#" class="footer__content-up-list-item-link">About</a>
+                    </li>
+                    <li class="footer__content-up-list-item">
+                        <a href="#" class="footer__content-up-list-item-link">Yachts</a>
+                    </li>
+                    <li class="footer__content-up-list-item">
+                        <a href="#" class="footer__content-up-list-item-link">Reviews</a>
+                    </li>
+                </ul>
+                <div class="footer__content-up-social grid gap-4">
+                    <p class="footer__content-up-social">We in social</p>
+                    <div class="footer__content-up-social-item flex gap-4">
+                        <a href="https://www.facebook.com/" class="footer__content-up-social-item-facebook">
+                            <svg width="40px" height="40px">
+                                <use href="./assets/svg/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer__content-up-social-item-instagram">
+                            <svg width="40px" height="40px" fill="inherit">
+                                <use href="./assets/svg/symbol-defs.svg#icon-instagram" fill="inherit"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/" class="footer__content-up-social-item-youtube">
+                            <svg width="40px" height="40px" >
+                                <use href="./assets/svg/symbol-defs.svg#icon-youtube" ></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+            <p class="footer__content-up-text flex gap-8 justify-center"><span class="footer__content-up-texts">2023. Yacht Adventures </span><span class="footer__content-up-texts">Privacy Police</span></p>
+        </div>
+    </footer>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
