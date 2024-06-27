@@ -1,0 +1,57 @@
+@media (max-width: 920px){
+    .adventure-title{
+        flex-direction: column-reverse;
+    }
+    .adventure__mega-img{
+        display: none;  
+    }
+    .adventure__mega-adaptiv-img{
+        top: -10px;
+        display: block;
+    } 
+    .adventure__title-lost{
+        color: #F6F5EF;
+        font-family: "DM Sans";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -3.15px;
+    }
+    .adventure__title-con{
+        top: 950px;
+    }
+    .adventure__smal-img{
+        left: 55%;
+    }
+    .adventure__mid-img{
+        left: 0;
+        top: 20px;
+    }
+    .exptor__modal-adaptiv{
+        background-image: none;
+    }
+} 
+
+@media (max-width: 375px){
+    .adventure__smal-img{
+        left: 40%;
+        top: 60px;
+    }
+
+    .adventure__smal-img{
+        left: 45%;
+    }
+
+    .adventure__title-con {
+        top: 870px;
+    }
+    .adventure__mega-adaptiv-img{
+        display: none;
+    }
+    .adventure__mega-modal-img{
+        display: block;
+    }
+
+}
+

@@ -1,0 +1,127 @@
+.menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.menu-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.menu-link:hover {
+    transform: translateY(-5px);
+}
+:root {
+    --glow-hue: 222deg;
+    --shadow-hue: 180deg;
+    --spring-easing: linear(
+    0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+    1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+    1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+    0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+    0.998 84%, 1
+  );
+    --spring-duration: 1.33s;
+}
+operty --shimmer {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 33deg;
+}
+
+@keyframes shimmer {
+    0% {
+        --shimmer: 0deg;
+    }
+    100% {
+        --shimmer: 360deg;
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes text {
+    0% {
+        background-position: 100% center;
+    }    
+    100% {
+        background-position: -100% center;
+    }    
+}
+
+.intro__button {
+    color: #F6F5EF;
+    font-family: "DM Sans";
+    font-weight: 600;
+    padding: .8em 1.4em;
+    position: relative;
+    isolation: isolate;
+    box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 -10px 20px -10px hsla(var(--shadow-hue),10%,90%,95%);
+    border-radius: 0.66em;
+    scale: 1;
+    transition: all var(--spring-duration) var(--spring-easing);
+}
+
+.intro__button:hover:not(:active),
+.intro__button.active {
+    transition-duration: calc(var(--spring-duration)*0.5);
+    scale: 1.2;
+    box-shadow: 0 4px 8px -2px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 0 0 transparent;
+}
+.intro__button:active {
+    scale: 1.1;
+    transition-duration: calc(var(--spring-duration)*0.5);
+}
+
+@media(max-width: 1024px){
+    .container{
+    flex-direction: column-reverse;
+    }
+    .explor__modal-img{
+        left: 250px;
+    }
+}
+
+@media(max-width: 768px){ 
+
+    .explor__modal-img{
+        left: 220px;
+    }
+
+}
+
+@media(max-width: 375px){
+    .explor__modal-img{
+        display: none;
+    }
+    .explor__modal-adaptiv-img{
+        display: block;
+    }
+    .yacht__modal-img{
+        display: none;
+    }
+    .yacht__modal-adaptiv-img{
+        display: block;
+    }
+    
+}
